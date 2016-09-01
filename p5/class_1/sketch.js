@@ -36,5 +36,4 @@ function draw() {
  		console.log(arrayOfCircles[i]);
  		line(arrayOfCircles[i-1].x, arrayOfCircles[i-1].y, arrayOfCircles[i].x, arrayOfCircles[i].y,)
  	}
-
- }
+}
