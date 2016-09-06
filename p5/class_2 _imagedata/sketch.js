@@ -137,5 +137,4 @@ function mouseClicked(){
 	avgRfill = 255;
 	avgGfill = 255;
 	avgBfill = 255;
-
 }
