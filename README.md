@@ -1,1 +1,1 @@
-[leaflet example, gpx](http://jessherzog.github.io/1-example/index.html)
+[leaflet example, gpx](http://jessherzog.github.io/1-example/)
