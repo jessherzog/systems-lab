@@ -10,7 +10,6 @@ var filepath4 = "/assets/routes CSV/sept_6.csv";
 var filepath5 = "/assets/routes CSV/sept_7.csv";
 
 var callbackFunction = function(data){
-	text(".",20,20);
 
 	var objectFromRow = function(headerRow, dataRow){
 		var headerArray = headerRow.split(",");
@@ -18,14 +17,16 @@ var callbackFunction = function(data){
 
 		var dataObj = {};
 
-		for (var i=0; i<headerArray.length; i++){
-			var key = headerArray[i];
-			var value = dataArray[i];
-
-			dataObj[key] = value;
+		for (var i=0; i<headerArray.length-40; i+=40){
+			if(dataArray[i] < 40.72){
+				var key = headerArray[i];
+				var value = dataArray[i];
+				dataObj[key] = value;	
+			}
 		}
-		console.log(dataObj);
-		// console.log(dataObj.lon);
+		
+	// console.log(dataObj);		
+	console.log(dataObj.value);
 	}
 
 	for (var row=1; row<data.length; row++){
@@ -47,14 +48,11 @@ function setup(){
 
 function draw(){
 	loadStrings(filepath1, callbackFunction, errorFunction);
+
 	//	use callbackFunction to process the data 
 	//	however you want to, while it's loading in	
 	//	give functions w/o ()
 }
-
-
-// filter points, pick every 20th, 50th, 100th point
-// get rid of anything > 40.72
 
 // heat maps - more points are hotter, possible data vis
 
