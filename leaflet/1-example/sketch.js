@@ -14,29 +14,29 @@ var run93Layer = omnivore.gpx('/assets/routes GPX/sept_3.gpx')
     })
     .addTo(mymap);
 
-var run94Layer = omnivore.gpx('/assets/routes GPX/sept_4.gpx')
-.on('ready', function() {
-    mymap.fitBounds(run94Layer.getBounds());
-})
-.addTo(mymap);
+// var run94Layer = omnivore.gpx('/assets/routes GPX/sept_4.gpx')
+// .on('ready', function() {
+//     mymap.fitBounds(run94Layer.getBounds());
+// })
+// .addTo(mymap);
 
-var run95Layer = omnivore.gpx('/assets/routes GPX/sept_5.gpx')
-.on('ready', function() {
-    mymap.fitBounds(run95Layer.getBounds());
-})
-.addTo(mymap);
+// var run95Layer = omnivore.gpx('/assets/routes GPX/sept_5.gpx')
+// .on('ready', function() {
+//     mymap.fitBounds(run95Layer.getBounds());
+// })
+// .addTo(mymap);
 
-var run96Layer = omnivore.gpx('/assets/routes GPX/sept_6.gpx')
-.on('ready', function() {
-    mymap.fitBounds(run96Layer.getBounds());
-})
-.addTo(mymap);
+// var run96Layer = omnivore.gpx('/assets/routes GPX/sept_6.gpx')
+// .on('ready', function() {
+//     mymap.fitBounds(run96Layer.getBounds());
+// })
+// .addTo(mymap);
 
-var run97Layer = omnivore.gpx('/assets/routes GPX/sept_7.gpx')
-    .on('ready', function() {
-        mymap.fitBounds(run97Layer.getBounds());
-    })
-    .addTo(mymap);
+// var run97Layer = omnivore.gpx('/assets/routes GPX/sept_7.gpx')
+//     .on('ready', function() {
+//         mymap.fitBounds(run97Layer.getBounds());
+//     })
+//     .addTo(mymap);
 
 
 // filter points, pick every 20th, 50th, 100th point
